@@ -7,6 +7,40 @@
     text-decoration: none;
 }
 
+/* .sidebarMenu{
+    position: absolute;
+    left: 0%;
+    z-index: 10;
+    top: 0;
+    border: 2px solid black;
+    background-color: aquamarine;
+    height: 101vh;
+    width: 50%;
+    display: none;
+    background-color: #1D1D1D;
+    color: white;
+    display: block;
+    transition: all 0.3s linear;
+    transform: translateX(-50%);
+}
+#openSidebarMenu{
+    /* z-index: 20; */
+
+/* #openSidebarMenu:checked ~ .sidebarMenu{
+    transform: translateX(50%);
+}
+.mwnu li{
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+
+}
+.menu li a{
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+}  */
+
 .display {
     display: flex;
 }
@@ -199,7 +233,7 @@
     }
 
     .navContent {
-        width: 32%;
+        width: 28%;
     }
 
     .navMid {
@@ -212,7 +246,7 @@
     }
 
     .heroSection_Content {
-        padding: 1.7rem 0rem 6.5rem 0rem;
+        padding: 2.7rem 0rem 6.5rem 0rem;
     }
 
     .heroSection_Content p {
@@ -232,6 +266,15 @@
         text-align: justify;
     }
 }
+
+/* @media screen and (min-width: 1024px) {
+    .navIcons {
+        width: 18%;
+    }
+    .navContent {
+        width: 69%;
+    }
+} */
 
 /* cardSection css part start hear  */
 .hidden_head {
@@ -279,6 +322,7 @@
     background-color: transparent;
     font-weight: bold;
     padding-bottom: 22px;
+    transition: 0.2s linear;
 }
 
 .card_img {
@@ -301,6 +345,7 @@
 .rightCard_head {
     padding-bottom: 20px;
     font-size: 21px;
+    color: #2c4158;
 }
 
 .rightCard_para {
@@ -374,6 +419,9 @@
 }
 
 /* gallery section css part start here  */
+.gallerySection {
+    background-color: #F5F5F5;
+}
 
 .inner_gallerySection {
     width: 80%;
@@ -390,6 +438,7 @@
 
 .galleryHead h1 {
     padding-bottom: 25px;
+    color: #2c4158;
 }
 
 .galleryPara {
@@ -414,6 +463,8 @@
     font-weight: 600;
     padding: 5px 10px;
     transition: 0.2s linear;
+    color: #2c4158;
+
 }
 
 .galleryNavSection ul li:hover {
@@ -610,11 +661,11 @@
 
 .oct {
     position: relative;
-    transition: 0.1s linear;
+    transition: 0.2s linear;
 }
 
 .oct:hover {
-    transform: scale(1.17);
+    transform: scale(1.1);
     color: red;
 }
 
@@ -633,6 +684,7 @@
     font-weight: bold;
     position: absolute;
     top: 35px;
+
 }
 
 @media screen and (max-width: 700px) {
@@ -667,24 +719,27 @@
     }
 
     .number {
-        font-size: 49px;
-        top: 60px;
+        font-size: 30px;
+        top: 39px;
     }
 
     .octagonContent img {
-        padding-bottom: 20px;
-        width: 57%;
+        padding-bottom: 11px;
+        width: 40%;
     }
 
     .oct_heading {
-        font-size: 26px;
-        padding-bottom: 32px;
+        font-size: 19px;
+        padding-bottom: 46px;
     }
-
 
 }
 
 /* service section css part start here  */
+.service_section {
+    background-color: #F5F5F5;
+
+}
 
 .inner_serviceSection {
     width: 90%;
@@ -693,6 +748,7 @@
 }
 
 .service_head {
+    color: #2c4158;
     padding-top: 50px;
     padding-bottom: 30px;
 }
@@ -718,6 +774,7 @@
 }
 
 .serviceCard1 {
+    /* color: #2c4158; */
     cursor: pointer;
     padding-top: 50px;
     width: 30%;
@@ -751,6 +808,7 @@
 
 .ServiceCardHead {
     padding-bottom: 10px;
+    color: #2c4158;
 }
 
 .ServiceCardPara {
@@ -758,6 +816,7 @@
     padding-bottom: 10px;
     text-align: center;
     padding-bottom: 30px;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 700px) {
@@ -866,6 +925,10 @@
 }
 
 /* blog news section css part start here  */
+.feedsection {
+    background-color: #F5F5F5;
+
+}
 
 .innerFeedSection {
     padding-top: 3rem;
@@ -918,6 +981,7 @@
 }
 
 .rightSideFeedHead {
+    color: #2c4158;
     padding-bottom: 10px;
     font-weight: bold;
 }
@@ -936,10 +1000,19 @@
     margin-bottom: 20px;
 }
 
+.read a {
+    color: #2c4158;
+
+}
+
 .multipleFeed {
     margin-top: 2rem;
     width: 100%;
     justify-content: space-between;
+}
+
+.feedHeadSection {
+    color: #2c4158;
 }
 
 .feedCard1 {
@@ -974,7 +1047,9 @@
         flex-direction: column;
     }
 
-    .singleFeed_leftSide, .feedCard1, .feedLowerSection {
+    .singleFeed_leftSide,
+    .feedCard1,
+    .feedLowerSection {
         width: 100%;
     }
 
@@ -983,7 +1058,8 @@
         padding: 0px 11px;
     }
 
-    .rightSideFeedHead , .rightSdieFeedPara {
+    .rightSideFeedHead,
+    .rightSdieFeedPara {
         font-size: 16px;
         text-align: justify;
     }
@@ -1029,12 +1105,14 @@
     display: flex;
     justify-content: space-between;
 }
-.navFooterIcon{
+
+.navFooterIcon {
     display: flex;
     width: 19%;
     padding-bottom: 52px;
 }
-.footer_content p{
+
+.footer_content p {
     font-size: 14px;
     padding-bottom: 64px;
 }
@@ -1044,6 +1122,7 @@
         /* padding: 74px 0px 43px 0px; */
         width: 100%;
     }
+
     .navFooterIcon {
         display: flex;
         width: 62%;
