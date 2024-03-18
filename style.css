@@ -6,40 +6,45 @@
     list-style-type: none;
     text-decoration: none;
 }
-
-/* .sidebarMenu{
-    position: absolute;
-    left: 0%;
-    z-index: 10;
-    top: 0;
-    border: 2px solid black;
-    background-color: aquamarine;
-    height: 101vh;
-    width: 50%;
+#toggle:checked ~ .leftbar {
+    /* height: 100%; */
+    /* top: 0px; */
+    left: 0px;
+}
+.navSidebar{
     display: none;
-    background-color: #1D1D1D;
-    color: white;
-    display: block;
-    transition: all 0.3s linear;
-    transform: translateX(-50%);
 }
-#openSidebarMenu{
-    /* z-index: 20; */
-
-/* #openSidebarMenu:checked ~ .sidebarMenu{
-    transform: translateX(50%);
+#toggle {
+    display: none;
 }
-.mwnu li{
-    color: white;
-    border-bottom: 1px solid rgba(255,255,255,0.10);
-
+ 
+.button {
+    font-size: 23px;
 }
-.menu li a{
+ 
+.exit {
+    cursor: pointer;
+    font-weight: 800;
     color: white;
-    display: block;
-    text-transform: uppercase;
-    padding: 20px;
-}  */
+    float: right;
+    padding: 10px 24px;
+}
+ 
+.leftbar {
+    position: absolute;
+    width: 50%;
+    height: 104%;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    left: -50%;
+    z-index: 3;
+    transition: left 0.5s ease-in-out;
+}
+ 
+.leftbar p {
+    color: white;
+    padding: 17% 4%;
+}
 
 .display {
     display: flex;
@@ -229,7 +234,7 @@
     }
 
     .navSection {
-        padding: 41px 0px;
+        padding: 41px 5px;
     }
 
     .navContent {
@@ -242,7 +247,7 @@
 
     .navMid p {
         font-weight: 600;
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .heroSection_Content {
@@ -264,6 +269,10 @@
     .heroSection_Content h1 {
         font-size: 31px;
         text-align: justify;
+    }
+    .navSidebar{
+        display: flex;
+        color: white;
     }
 }
 
