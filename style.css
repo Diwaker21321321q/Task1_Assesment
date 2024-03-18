@@ -234,6 +234,7 @@
     }
 }
 
+
 /* cardSection css part start hear  */
 .hidden_head {
     display: none;
@@ -946,5 +947,71 @@
     .footer_content p {
         font-size: 13px;
         padding-bottom: 42px;
+    }
+}
+
+/* media query for ipad  */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    /* Your CSS rules specific to iPads go here */
+    .navIcons{
+        display: none;
+    }
+    .navContent {
+        width: 100%;
+    }
+    .heroSection_Content h1 {
+        text-align: center;
+    }
+    .inner_cardSection {
+        width: 80%;
+    }
+    .galleryHead h1 {
+        text-align: center;
+    }
+    .lower_gallerySection {
+        width: 85%;
+    }
+    .lower_leftSection {
+        width: 85%;
+    }
+    .lower_rightSection {
+        width: 48%;
+    }
+    .inner_workProcess {
+        width: 100%;
+    }
+    .About_us {
+        height: 70vh;
+    }
+    .service_head {
+        font-size: 1.6rem;
+    }
+    .ServiceCardHead {
+        font-size: 13px;;
+    }
+    .innerFeedSection {
+        width: 90%;
+    }
+    .singleFeed_leftSide {
+        display: flex;
+        width: 47%;
+    }
+    .singFeed_Rightside {
+        width: 57%;
+    }
+    .feedLowerSection {
+        width: 100%;
+    }
+    .aboutUsImg{
+        padding-top: 70px;
+    }
+    .navFooterIcon {
+        display: flex;
+        width: 28%;
+    }
+    .footer_nav {
+        width: 63%;
     }
 }
