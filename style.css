@@ -56,6 +56,8 @@
 .shadow {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
+
+/* hero section css part start here  */
 .hero_section {
     background-image: url("./Images/header-replace-image.jpg");
     background-repeat: no-repeat;
@@ -254,9 +256,8 @@
     display: flex;
 }
 .card_content {
-    padding-left: 20px;
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 0px 0px 20px;
     align-items: start;
     display: flex;
     flex-direction: column;
@@ -311,12 +312,18 @@
 .rightCard_button button {
     background-color: rgb(199, 58, 7);
     color: white;
-    cursor: pointer;
     padding: 15px 50px;
     border-radius: 10px;
     border: none;
     margin-bottom: 34px;
     font-weight: bold;
+    transition: 0.2s linear;
+}
+.rightCard_button button:hover{
+    transform: scale(1.03);
+    background-color: transparent;
+    outline: 1px solid  rgb(199, 58, 7) ;
+    color: rgb(199, 58, 7);
 }
 
 @media screen and (max-width: 700px) {
@@ -365,7 +372,7 @@
     margin: auto;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 2rem 0rem
 }
 .upper_gallerySection {
     flex-direction: column;
@@ -531,8 +538,7 @@
     background-color: #2E3F51;
 }
 .inner_workProcess {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 4rem 0rem;
     margin: auto;
     color: white;
     width: 85%;
@@ -617,7 +623,6 @@
 /* service section css part start here  */
 .service_section {
     background-color: #F5F5F5;
-
 }
 .inner_serviceSection {
     width: 90%;
@@ -626,25 +631,17 @@
 }
 .service_head {
     color: #2c4158;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding: 50px 0px 30px 0;
 }
 .servicePara {
     width: 70%;
     text-align: center;
     padding-bottom: 60px;
 }
-.serviceUpperSection {
+.serviceUpperSection , .serviceLowerSection {
     justify-content: space-around;
     width: 90%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.serviceLowerSection {
-    justify-content: space-around;
-    width: 90%;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0px;
 }
 .serviceCard1 {
     cursor: pointer;
@@ -679,7 +676,6 @@
 }
 .ServiceCardPara {
     line-height: 1.5;
-    padding-bottom: 10px;
     text-align: center;
     padding-bottom: 30px;
     opacity: 0.8;
@@ -719,7 +715,6 @@
 }
 .inner_AboutUs {
     height: 100vh;
-    width: 100%;
     margin: auto;
     color: #ffffff;
 }
@@ -728,8 +723,7 @@
     cursor: pointer;
 }
 .aboutUsHead {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding: 50px 0px 40px 0px;
 }
 .clientInfo {
     text-align: center;
@@ -740,8 +734,7 @@
     font-size: 15px;
 }
 .aboutUsInfo {
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 20px 0px 30px 0px ;
     line-height: 1.8;
     width: 60%;
     text-align: center;
@@ -778,24 +771,18 @@
 
 }
 .innerFeedSection {
-    padding-top: 3rem;
+    padding: 3rem 0rem 4rem 0rem;
     width: 90%;
     margin: auto;
-    padding-bottom: 4rem;
 }
 .feedParaSection {
-    padding-top: 1.6rem;
+    padding: 1.6rem 0rem 4rem 0rem;
     text-align: center;
     width: 62%;
     line-height: 1.6;
-    padding-bottom: 4rem;
 }
 .feedLowerSection {
     width: 80%;
-}
-.singleFeed {
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    align-items: center;
 }
 .singleFeed_leftSide {
     display: flex;
@@ -812,8 +799,7 @@
     color: rgb(201, 6, 6);
     font-size: 12.7px;
     font-weight: bold;
-    padding-bottom: 18px;
-    padding-top: 18px;
+    padding: 18px 0px;
 }
 .admin {
     padding-left: 14px;
@@ -837,7 +823,6 @@
 }
 .read a {
     color: #2c4158;
-
 }
 .multipleFeed {
     margin-top: 2rem;
@@ -849,7 +834,6 @@
 }
 .feedCard1 {
     width: 32%;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     align-items: center;
     padding: 20px 15px;
 }
@@ -901,7 +885,6 @@
         padding: 28px 12px;
     }
 }
-
 /* footer section css part start here  */
 
 .footerSection {
